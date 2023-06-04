@@ -40,9 +40,38 @@ best epoch: 255/300
 ```
 
 # 测试可视化
-Todo
+## 测试图片和视频
+单张图片和两个测试视频
+
+![Ear.jpg](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/Ear.jpg)
+
+[Ear.mp4](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/Ear.mp4)
+
+[Ear2.mp4](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/Ear2.mp4)
 
 
+输出结果如下
+
+## RTMDet-tiny
+Ear Img rtmdet 可视化
+![Ear.jpg](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/E2_rtmdet/vis/Ear.jpg)
+
+[Ear.mp4 rtmdet 结果可视化](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/E2_rtmdet/Ear_pred0.6.mp4)
+
+## RTMPose-s
+Ear Img OpenCV 可视化
+![Ear_pose OpenCV](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/Ear_pose.jpg)
+
+Ear Img Visualizer 可视化
+![Ear_pose_visualizer](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/Ear_pose_visualizer.jpg)
+
+Ear Img RTMDet-RTMPose API 可视化
+![Ear_pose2](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/RTMDet-RTMPose/Ear.jpg)
+
+
+[RTMPose-s Ear.mp4](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/RTMDet-RTMPose/Ear.mp4)
+
+[RTMPose-s Ear2.mp4](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/MyEar/RTMDet-RTMPose/Ear2.mp4)
 
 
 
