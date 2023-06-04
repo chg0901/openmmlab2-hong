@@ -76,26 +76,17 @@ Ear Img RTMDet-RTMPose API 可视化
 
 
 # 代码Notebook
-[00Ear目标检测-训练.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/00Ear%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-%E8%AE%AD%E7%BB%83.ipynb)
-
-[01Ear目标检测-训练2.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/01Ear%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-%E8%AE%AD%E7%BB%832.ipynb)
-
-[02Ear目标检测-可视化训练日志.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/02Ear%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AE%AD%E7%BB%83%E6%97%A5%E5%BF%97.ipynb)
-
-[03Ear目标检测-模型权重文件精简转换.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/03Ear%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-%E6%A8%A1%E5%9E%8B%E6%9D%83%E9%87%8D%E6%96%87%E4%BB%B6%E7%B2%BE%E7%AE%80%E8%BD%AC%E6%8D%A2.ipynb)
-
-[04Ear目标检测-预测.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/04Ear%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-%E9%A2%84%E6%B5%8B.ipynb)
-
-[05Ear关键点检测-训练RTMPose.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/05Ear%E5%85%B3%E9%94%AE%E7%82%B9%E6%A3%80%E6%B5%8B-%E8%AE%AD%E7%BB%83RTMPose.ipynb)
-
-[06Ear关键点检测-可视化训练日志.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/06Ear%E5%85%B3%E9%94%AE%E7%82%B9%E6%A3%80%E6%B5%8B-%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AE%AD%E7%BB%83%E6%97%A5%E5%BF%97.ipynb)
-
-[07Ear关键点检测预测-命令行.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/07Ear%E5%85%B3%E9%94%AE%E7%82%B9%E6%A3%80%E6%B5%8B%E9%A2%84%E6%B5%8B-%E5%91%BD%E4%BB%A4%E8%A1%8C.ipynb)
-
-[08Ear关键点检测预测-Python API.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/08Ear%E5%85%B3%E9%94%AE%E7%82%B9%E6%A3%80%E6%B5%8B%E9%A2%84%E6%B5%8B-Python%20API.ipynb)
+- [01Ear目标检测-训练RTMDet.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/01Ear%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-%E8%AE%AD%E7%BB%832.ipynb)
+- [02Ear目标检测-可视化训练日志.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/02Ear%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AE%AD%E7%BB%83%E6%97%A5%E5%BF%97.ipynb)
+- [03Ear目标检测-模型权重文件精简转换.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/03Ear%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-%E6%A8%A1%E5%9E%8B%E6%9D%83%E9%87%8D%E6%96%87%E4%BB%B6%E7%B2%BE%E7%AE%80%E8%BD%AC%E6%8D%A2.ipynb)
+- [04Ear目标检测-预测.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/04Ear%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-%E9%A2%84%E6%B5%8B.ipynb)
+- [05Ear关键点检测-训练RTMPose.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/05Ear%E5%85%B3%E9%94%AE%E7%82%B9%E6%A3%80%E6%B5%8B-%E8%AE%AD%E7%BB%83RTMPose.ipynb)
+- [06Ear关键点检测-可视化训练日志.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/06Ear%E5%85%B3%E9%94%AE%E7%82%B9%E6%A3%80%E6%B5%8B-%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AE%AD%E7%BB%83%E6%97%A5%E5%BF%97.ipynb)
+- [07Ear关键点检测预测-命令行.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/07Ear%E5%85%B3%E9%94%AE%E7%82%B9%E6%A3%80%E6%B5%8B%E9%A2%84%E6%B5%8B-%E5%91%BD%E4%BB%A4%E8%A1%8C.ipynb)
+- [08Ear关键点检测预测-Python API.ipynb](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/08Ear%E5%85%B3%E9%94%AE%E7%82%B9%E6%A3%80%E6%B5%8B%E9%A2%84%E6%B5%8B-Python%20API.ipynb)
 
 
-[知乎笔记链接](https://zhuanlan.zhihu.com/p/634511756) 
+
 
 # 训练权重
 
@@ -110,6 +101,11 @@ RTMPose-s模型权重
 [best_coco_bbox_mAP_epoch_196_zip-dc2ee3bc.pth](https://drive.google.com/file/d/12NlnTy3P7-oVaMaYev3xr3tZbb2zFC6l/view?usp=sharing)
 
 [best_PCK_epoch_255_zip-d1bf22ba.pth](https://drive.google.com/file/d/1WQRyWI22EJji4IwI9M_1ye_ljUwuAIyq/view?usp=sharing)
+
+# 笔记链接
+1. [【七班】MMPose代码实践与耳朵穴位数据集实战【OpenMMLab AI实战营第二期Day3】](https://zhuanlan.zhihu.com/p/634511756) 
+2. [【七班】人体姿态估计概论笔记【OpenMMLab AI实战营第二期Day2】](https://blog.csdn.net/chenghong1/article/details/131006094)
+3. [【七班】OpenMMLab 开源项目介绍【OpenMMLab AI实战营第二期Day1】](https://blog.csdn.net/chenghong1/article/details/130988224)
 
 
 
