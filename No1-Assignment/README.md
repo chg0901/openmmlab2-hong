@@ -1,42 +1,26 @@
 # 测试结果
 
 ## RTMDet-tiny
-best epoch: 196/200
+best epoch: 196/200 
+1. [Json sclar](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/mmdetection/work_dirs/rtmdet_tiny_Ear/20230604_153610_ear_train_200_best196_.808/vis_data/20230604_153610.json)
+2. [Config file](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/mmdetection/work_dirs/rtmdet_tiny_Ear/20230604_153610_ear_train_200_best196_.808/vis_data/config.py)
+3. [Training and Validation Log](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/mmdetection/work_dirs/rtmdet_tiny_Ear/20230604_153610_ear_train_200_best196_.808/20230604_153610.log)
 ```
- Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.808
- Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.970
- Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.970
- Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
- Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
- Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.808
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.838
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.838
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.838
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = -1.000
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.838
-06/04 16:54:47 - mmengine - INFO - bbox_mAP_copypaste: 0.808 0.970 0.970 -1.000 -1.000 0.808
-06/04 16:54:47 - mmengine - INFO - Epoch(test) [3/3]    coco/bbox_mAP: 0.8080  coco/bbox_mAP_50: 0.9700  coco/bbox_mAP_75: 0.9700  coco/bbox_mAP_s: -1.0000  coco/bbox_mAP_m: -1.0000  coco/bbox_mAP_l: 0.8080  data_time: 1.4042  time: 1.5282
+coco/bbox_mAP: 0.8080     coco/bbox_mAP_50: 0.9700  coco/bbox_mAP_75: 0.9700  
+coco/bbox_mAP_s: -1.0000  coco/bbox_mAP_m: -1.0000  coco/bbox_mAP_l: 0.8080
 ```
 
-RTMPose-s
+## RTMPose-s
 
 best epoch: 255/300
+1. [Json sclar](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/mmpose/work_dirs/rtmpose-s-Ear/20230604_172709/vis_data/20230604_172709.json)
+2. [Config file](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/mmpose/work_dirs/rtmpose-s-Ear/20230604_172709/vis_data/config.py)
+3. [Training and Validation Log](https://github.com/chg0901/openmmlab2-hong/blob/main/No1-Assignment/mmpose/work_dirs/rtmpose-s-Ear/20230604_172709/20230604_172709.log)
+
 ```
- Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.741
- Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  1.000
- Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.969
- Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
- Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.741
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.781
- Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  1.000
- Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.976
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.781
-06/04 20:49:49 - mmengine - INFO - Evaluating PCKAccuracy (normalized by ``"bbox_size"``)...
-06/04 20:49:49 - mmengine - INFO - Evaluating AUC...
-06/04 20:49:49 - mmengine - INFO - Evaluating NME...
-06/04 20:49:49 - mmengine - INFO - Epoch(test) [6/6]    coco/AP: 0.740501  coco/AP .5: 1.000000  coco/AP .75: 0.968647  coco/AP (M): -1.000000  coco/AP (L): 0.740501  coco/AR: 0.780952  coco/AR .5: 1.000000  coco/AR .75: 0.976190  coco/AR (M): -1.000000  coco/AR (L): 0.780952  PCK: 0.975057  AUC: 0.137925  NME: 0.040603  data_time: 1.145144  time: 1.170622
+coco/AP: 0.740501       coco/AP .5: 1.000000   coco/AP .75: 0.968647  coco/AP (M): -1.000000  coco/AP (L): 0.740501  
+coco/AR: 0.780952       coco/AR .5: 1.000000   coco/AR .75: 0.976190  coco/AR (M): -1.000000  coco/AR (L): 0.780952 
+PCK: 0.975057           AUC: 0.137925          NME: 0.040603 
 ```
 
 # 测试可视化
