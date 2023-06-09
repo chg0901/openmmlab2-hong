@@ -24,3 +24,77 @@ for i in range(len(image_list)):
     print(results[i][print_keys[3]])
     print()
 
+# # python  ../../demo/image_demo.py  ../../data/grapes.jpg  resnet50_fintuneM2.py  --checkpoint exp3_resnet50/best_accuracy_top1_epoch_8.pth  --show-dir outputs_test_data/
+# # python  \
+# #     ../../demo/image_demo.py  \
+# #     ../../data/grapes.jpg  \
+# #     resnet50_fintuneM2.py  \
+# #     --checkpoint exp3_resnet50/best_accuracy_top1_epoch_8.pth \
+# #     --show-dir outputs_test_data/
+
+# (openmmlab-pose) cine@cine-prof:~/Documents/GitHub/mmpretrain/projects/fruits$  python  ../../demo/image_demo.py  ../../data/grapes.jpg  resnet50_fintuneM2.py  --checkpoint exp3_resnet50/best_accuracy_top1_epoch_8.pth  --show-dir outputs_test_data/
+# Loads checkpoint by local backend from path: exp3_resnet50/best_accuracy_top1_epoch_8.pth
+# Inference ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+# 06/09 12:43:07 - mmengine - WARNING - `Visualizer` backend is not initialized because save_dir is None.
+# {
+#   "pred_label": 24,
+#   "pred_score": 0.9906376004219055,
+#   "pred_class": "葡萄-红"
+# }
+
+# 查看预测出来的图片
+import cv2
+import matplotlib.pyplot as plt
+# image_list = ['data/apple.jpeg', 'data/banana.jpeg', 'data/fruit.jpeg', 'data/grapes.jpg']
+img=cv2.imread('outputs_test_data/apple.png')[:,:,(2,1,0)]
+# img=cv2.imread('outputs_test_data/apple.png')
+# img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+# img=cv2.imread('outputs_test_data/banana.png')
+# img=cv2.imread('outputs_test_data/fruit.png')
+# img=cv2.imread('outputs_test_data/grapes.png')
+plt.imshow(img)
+plt.show()
+
+
+# python  ../../demo/image_demo.py  ../../data/apple.*  resnet50_fintuneM2.py  --checkpoint exp3_resnet50/best_accuracy_top1_epoch_8.pth  --show-dir outputs_test_data/
+# python  ../../demo/image_demo.py  ../../data/ban*.*  resnet50_fintuneM2.py  --checkpoint exp3_resnet50/best_accuracy_top1_epoch_8.pth  --show-dir outputs_test_data/
+# python  ../../demo/image_demo.py  ../../data/fru*.*  resnet50_fintuneM2.py  --checkpoint exp3_resnet50/best_accuracy_top1_epoch_8.pth  --show-dir outputs_test_data/
+# python  ../../demo/image_demo.py  ../../data/grapes.jpg  resnet50_fintuneM2.py  --checkpoint exp3_resnet50/best_accuracy_top1_epoch_8.pth  --show-dir outputs_test_data/
+
+
+# Loads checkpoint by local backend from path: exp3_resnet50/best_accuracy_top1_epoch_8.pth
+# Inference ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+# 06/09 12:56:30 - mmengine - WARNING - `Visualizer` backend is not initialized because save_dir is None.
+# {
+#   "pred_label": 18,
+#   "pred_score": 0.6414839029312134,
+#   "pred_class": "苹果-红"
+# }
+#
+# Loads checkpoint by local backend from path: exp3_resnet50/best_accuracy_top1_epoch_8.pth
+# Inference ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+# 06/09 12:56:33 - mmengine - WARNING - `Visualizer` backend is not initialized because save_dir is None.
+# {
+#   "pred_label": 28,
+#   "pred_score": 1.0,
+#   "pred_class": "香蕉"
+# }
+#
+# Loads checkpoint by local backend from path: exp3_resnet50/best_accuracy_top1_epoch_8.pth
+# Inference ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+# 06/09 12:56:36 - mmengine - WARNING - `Visualizer` backend is not initialized because save_dir is None.
+# {
+#   "pred_label": 5,
+#   "pred_score": 0.3799188733100891,
+#   "pred_class": "柠檬"
+# }
+#
+# Loads checkpoint by local backend from path: exp3_resnet50/best_accuracy_top1_epoch_8.pth
+# Inference ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+# 06/09 12:56:38 - mmengine - WARNING - `Visualizer` backend is not initialized because save_dir is None.
+# {
+#   "pred_label": 24,
+#   "pred_score": 0.9906376004219055,
+#   "pred_class": "葡萄-红"
+# }
