@@ -1,4 +1,4 @@
-# Fruits数据集作业目录
+# Fruits数据集作业文件目录
 https://github.com/chg0901/openmmlab2-hong/tree/main/Assignment2/projects/fruits
 
 **题目：** 基于 ResNet50 的水果分类
@@ -17,10 +17,13 @@ https://github.com/chg0901/openmmlab2-hong/tree/main/Assignment2/projects/fruits
 ![image](https://github.com/chg0901/openmmlab2-hong/assets/8240984/52de578e-42d1-45ab-87c6-ea0c60e59044)
 
 # 任务完成
-## 1. [**dataset_process.py**](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/dataset_process.py)
-## 2/3/4. **Config 中对数据集的配置** 
+## 1.划分训练集和验证集
 
- 
+****  [**dataset_process.py**](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/dataset_process.py)
+## 2/3/4. 
+
+### **Config 中对数据集的配置** 
+
 **训练配置[projects/fruits/resnet50_fintuneM2.py](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/resnet50_fintuneM2.py) 继承自[projects/fruits/resnet50_fintune.py](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/resnet50_fintune.py)**
 
 ```python 
@@ -128,7 +131,7 @@ test_evaluator = dict(type='Accuracy', topk=(1, 5))
 
 **完整Config配置** ([projects/fruits/exp3_resnet50/resnet50_fintuneM2.py](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/exp3_resnet50/resnet50_fintuneM2.py)) 
 
-## 测试结果
+### 测试结果
 
 - **accuracy/top1: 91.5138**
 - **accuracy/top5: 98.3945**
@@ -196,8 +199,8 @@ plt.savefig("all_predicted_image.png", bbox_inches='tight')
 plt.show()
 
 ```
-
-#### 训练日志
+# 训练日志与脚本命令
+## 训练日志
 
 [训练日志log:   20230608_170620.log](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/exp3_resnet50/20230608_170620/20230608_170620.log)
 ```
