@@ -1,28 +1,57 @@
 from mmpretrain import ImageClassificationInferencer
-
-inferencer = ImageClassificationInferencer('./projects/fruits/resnet18_fintuneM.py',
-                                           pretrained='./projects/fruits/exp/epoch_10.pth')
+import cv2
+import matplotlib.pyplot as plt
+inferencer = ImageClassificationInferencer('./resnet50_fintuneM2.py',
+                                           pretrained='./exp3_resnet50/best_accuracy_top1_epoch_8.pth')
 
 image_list = ['data/apple.jpeg', 'data/banana.jpeg', 'data/fruit.jpeg', 'data/grapes.jpg']
+image_list = ['../../'+i for i in image_list]
 
-for i in range(len(image_list)):
-    # result0 = inferencer(image_list[i], show=True)
-    result0 = inferencer(image_list[i])
-    print(f"file name: {image_list[i]}")
-    print(result0[0][list(result0[0].keys())[1]])
-    print(result0[0][list(result0[0].keys())[3]])
-    print()
+fig, _ = plt.subplots(nrows=2, ncols=2,figsize=(15, 15))
+for i, ax in enumerate(fig.axes):
+    img = cv2.imread(image_list[i])[:, :, (2, 1, 0)]
+    # img=cv2.imread('outputs_test_data/apple.png')
+    # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    ax.axis("off")
+    ax.imshow(img)
 
+plt.savefig("all_test_image.png", bbox_inches='tight')
+plt.show()
+
+
+# # infer each image
+# for i in range(len(image_list)):
+#     # result0 = inferencer(image_list[i], show=True)
+#     result0 = inferencer(image_list[i])
+#     print(f"file name: {image_list[i]}")
+#     print(result0[0][list(result0[0].keys())[1]])
+#     print(result0[0][list(result0[0].keys())[3]])
+#     print()
+
+# infer all image in the image_list
 results = inferencer(image_list, batch_size=4)
 
 print_keys = list(results[0].keys())
-for i in range(len(image_list)):
-    # result0 = inferencer(image_list[i], show=True)
-    print(f"file name: {image_list[i]}")
 
-    print(results[i][print_keys[1]])
-    print(results[i][print_keys[3]])
+fig, _ = plt.subplots(nrows=2, ncols=2,figsize=(15, 15))
+for i, ax in enumerate(fig.axes):
+    image_name = image_list[i].split('/')[-1].split('.')[0]
+    img = cv2.imread(f'outputs_test_data/{image_name}.png')[:, :, (2, 1, 0)]
+    # img=cv2.imread('outputs_test_data/apple.png')
+    # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    # plt.imshow(img)
+    ax.axis("off")
+    ax.imshow(img)
+    # ax.plot(np.sin(np.linspace(0, 2 * np.pi, 100) + np.pi / 2 * i))
+
+    print(f"file name: {image_list[i]}")
+    print(f"{print_keys[1]}: {results[i][print_keys[1]]}")
+    print(f"{print_keys[3]}: {results[i][print_keys[3]]}")
     print()
+
+# plt.axis("tight")
+plt.savefig("all_predicted_image.png", bbox_inches='tight')
+plt.show()
 
 # # python  ../../demo/image_demo.py  ../../data/grapes.jpg  resnet50_fintuneM2.py  --checkpoint exp3_resnet50/best_accuracy_top1_epoch_8.pth  --show-dir outputs_test_data/
 # # python  \
@@ -42,19 +71,19 @@ for i in range(len(image_list)):
 #   "pred_class": "葡萄-红"
 # }
 
-# 查看预测出来的图片
-import cv2
-import matplotlib.pyplot as plt
-# image_list = ['data/apple.jpeg', 'data/banana.jpeg', 'data/fruit.jpeg', 'data/grapes.jpg']
-img=cv2.imread('outputs_test_data/apple.png')[:,:,(2,1,0)]
-# img=cv2.imread('outputs_test_data/apple.png')
-# img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-# img=cv2.imread('outputs_test_data/banana.png')
-# img=cv2.imread('outputs_test_data/fruit.png')
-# img=cv2.imread('outputs_test_data/grapes.png')
-plt.imshow(img)
-plt.show()
+# # 查看预测出来的图片
+# # import cv2
+# # import matplotlib.pyplot as plt
+# # image_list = ['data/apple.jpeg', 'data/banana.jpeg', 'data/fruit.jpeg', 'data/grapes.jpg']
+# img=cv2.imread('outputs_test_data/apple.png')[:,:,(2,1,0)]
+# # img=cv2.imread('outputs_test_data/apple.png')
+# # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+#
+# # img=cv2.imread('outputs_test_data/banana.png')
+# # img=cv2.imread('outputs_test_data/fruit.png')
+# # img=cv2.imread('outputs_test_data/grapes.png')
+# plt.imshow(img)
+# plt.show()
 
 
 # python  ../../demo/image_demo.py  ../../data/apple.*  resnet50_fintuneM2.py  --checkpoint exp3_resnet50/best_accuracy_top1_epoch_8.pth  --show-dir outputs_test_data/
