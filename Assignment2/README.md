@@ -19,7 +19,7 @@ https://github.com/chg0901/openmmlab2-hong/tree/main/Assignment2/projects/fruits
 # 任务完成
 ## 1.划分训练集和验证集
 
-****  [**dataset_process.py**](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/dataset_process.py)
+**文件链接**  [**dataset_process.py**](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/dataset_process.py)
 ## 2/3/4. 
 
 ### **Config 中对数据集的配置** 
