@@ -39,17 +39,13 @@ for i, ax in enumerate(fig.axes):
     img = cv2.imread(f'outputs_test_data/{image_name}.png')[:, :, (2, 1, 0)]
     # img=cv2.imread('outputs_test_data/apple.png')
     # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    # plt.imshow(img)
     ax.axis("off")
     ax.imshow(img)
-    # ax.plot(np.sin(np.linspace(0, 2 * np.pi, 100) + np.pi / 2 * i))
-
     print(f"file name: {image_list[i]}")
     print(f"{print_keys[1]}: {results[i][print_keys[1]]}")
     print(f"{print_keys[3]}: {results[i][print_keys[3]]}")
     print()
 
-# plt.axis("tight")
 plt.savefig("all_predicted_image.png", bbox_inches='tight')
 plt.show()
 
