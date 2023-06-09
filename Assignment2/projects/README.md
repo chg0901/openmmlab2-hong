@@ -126,9 +126,9 @@ test_evaluator = dict(type='Accuracy', topk=(1, 5))
 
 ```
 
-[**完整Config配置(projects/fruits/exp3_resnet50/resnet50_fintuneM2.py) **](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/exp3_resnet50/resnet50_fintuneM2.py)
+**完整Config配置** ([projects/fruits/exp3_resnet50/resnet50_fintuneM2.py](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment2/projects/fruits/exp3_resnet50/resnet50_fintuneM2.py)) 
 
-### 测试结果
+## 测试结果
 
 - **accuracy/top1: 91.5138**
 - **accuracy/top5: 98.3945**
@@ -231,9 +231,9 @@ plt.show()
 ```
 
 
-## 命令行工具
+## cat_dog数据集训练测试分析命令行，fruit数据集类似
  **工作目录**：projects/cats_dogs$
-```
+```bash
 # 训练  
  mim train mmpretrain resnet18_fintuneM.py --work-dir=./exp
 
