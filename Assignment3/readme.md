@@ -28,7 +28,7 @@
 
 ### **Config 中对数据集的配置** 
 
-**训练配置[rtmdet_tiny_1xb12-40e_drinks.py](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment3/mmdetection/rtmdet_tiny_1xb12-40e_drinks.py) **
+**训练配置**[rtmdet_tiny_1xb12-40e_drinks.py](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment3/mmdetection/rtmdet_tiny_1xb12-40e_drinks.py) 
 
 ```python 
 data_root = './data/Drink_284_Detection_coco/'
