@@ -1,14 +1,6 @@
-# Homework 4: Watermelon pixel-level semantic segmentation based on PSPNet
+# Note，Tutorial and Assignment Results of "Semantic Segmentation With MMSeg"
 
-[[Description]](https://github.com/open-mmlab/OpenMMLabCamp/issues/388)
-[[Data 1 (raw data)]](https://zihao-openmmlab.obs.cn-east-3.myhuaweicloud.com/20230130-mmseg/dataset/watermelon/Watermelon87_Semantic_Seg_Labelme.zip)
-[[Data 2 (precessed data)]](https://zihao-openmmlab.obs.cn-east-3.myhuaweicloud.com/20230130-mmseg/dataset/watermelon/Watermelon87_Semantic_Seg_Mask.zip)
-[[Code Base]](https://github.com/TommyZihao/MMSegmentation_Tutorials/tree/main/20230612/%E3%80%90C1%E3%80%91Kaggle%E5%AE%9E%E6%88%98-%E8%BF%AA%E6%8B%9C%E5%8D%AB%E6%98%9F%E8%88%AA%E6%8B%8D%E5%A4%9A%E7%B1%BB%E5%88%AB%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2)
-[[Video]](https://www.bilibili.com/video/BV1uh411T73q/)
-
-## 作业：MMSeg 语义分割
-
-#### 需要提交的文件
+#### 作业需要提交的文件
 1. 训练config
 2. 训练日志log和输出文件夹work_dirs
 3. 测试图片视频原图即推理后的图片视频
@@ -74,6 +66,14 @@ Datafolder: [./mmsegmentation/data/](./mmsegmentation/data/)
 
 
 
+## Assignment 4: Watermelon pixel-level semantic segmentation based on PSPNet
+
+[[Description]](https://github.com/open-mmlab/OpenMMLabCamp/issues/388)
+[[Data 1 (raw data)]](https://zihao-openmmlab.obs.cn-east-3.myhuaweicloud.com/20230130-mmseg/dataset/watermelon/Watermelon87_Semantic_Seg_Labelme.zip)
+[[Data 2 (precessed data)]](https://zihao-openmmlab.obs.cn-east-3.myhuaweicloud.com/20230130-mmseg/dataset/watermelon/Watermelon87_Semantic_Seg_Mask.zip)
+[[Code Base]](https://github.com/TommyZihao/MMSegmentation_Tutorials/tree/main/20230612/%E3%80%90C1%E3%80%91Kaggle%E5%AE%9E%E6%88%98-%E8%BF%AA%E6%8B%9C%E5%8D%AB%E6%98%9F%E8%88%AA%E6%8B%8D%E5%A4%9A%E7%B1%BB%E5%88%AB%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2)
+[[Video]](https://www.bilibili.com/video/BV1uh411T73q/)
+
 ### 作业详情
 
 #### 背景：西瓜瓤、西瓜皮、西瓜籽像素级语义分割
@@ -105,7 +105,7 @@ Datafolder: [./mmsegmentation/data/](./mmsegmentation/data/)
 - mAcc: 28.4600
 
 
-# Tutorial
+# Note and Tutorial
 ## Environment Setup
 
 ```
