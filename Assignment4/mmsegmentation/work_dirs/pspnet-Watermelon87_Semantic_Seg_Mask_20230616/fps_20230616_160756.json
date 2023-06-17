@@ -1,0 +1,6 @@
+{
+    "config": "pspnet-Watermelon87_Semantic_Seg_Mask_20230616.py",
+    "unit": "img / s",
+    "average_fps": NaN,
+    "fps_variance": NaN
+}
