@@ -200,7 +200,7 @@ The modified config file is saved at `./mmsegmentation/pspnet-Watermelon87_Seman
 
 Outputs:
 
-[./work_dirs/Watermelon87_Semantic_Seg_Mask/20230616_114954/20230616_114954.log](./work_dirs/Watermelon87_Semantic_Seg_Mask/20230616_114954/20230616_114954.log)
+[./mmsegmentation/work_dirs/Watermelon87_Semantic_Seg_Mask/20230616_114954/20230616_114954.log](./mmsegmentation/work_dirs/Watermelon87_Semantic_Seg_Mask/20230616_114954/20230616_114954.log)
 ```
 +------------+-------+-------+
 |   Class    |  IoU  |  Acc  |
@@ -239,7 +239,7 @@ Outputs is the same as the above train outputs since we test evey 400 epoch duri
 ## Inference on Watermelon Image
 Notebook:[【H1】语义分割模型预测-单张图像-命令行.ipynb](./MMSeg_tutorial/【作业】西瓜多类别语义分割/【H1】语义分割模型预测-单张图像-命令行.ipynb)
 
-Notebook:[H3】Test_with_python_file_on_Documents.ipynb](./MMSeg_tutorial/【作业】西瓜多类别语义分割/【H3】Test_with_python_file_on_Documents.ipynb)
+Notebook:[【H3】Test_with_python_file_on_Documents.ipynb](./MMSeg_tutorial/【作业】西瓜多类别语义分割/【H3】Test_with_python_file_on_Documents.ipynb)
 ``` python
 # python test_img.py
 # ./good_codes/test_img.py
