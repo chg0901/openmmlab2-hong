@@ -10,4 +10,4 @@ Second AI Camp (online) of OpenMMLab
 
 - [Assignment 4 - Segmentation with PSPNet](https://github.com/chg0901/openmmlab2-hong/blob/main/Assignment4/README.md)
 
-- [Assignment 5 - MMagic]()
+- [Assignment 5 - MMagic[**TODO**]]()
